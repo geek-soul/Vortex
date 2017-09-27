@@ -15,9 +15,11 @@
 #include <winsock2.h>
 #endif // WIN32
 
+extern "C" {
 
 #include <libavcodec/avcodec.h>
 #include <libavdevice/avdevice.h>
+}
 
 #define JNIREG_CLASS "vortex/geek/com/vortex/NativeFFMPEGMethod"
 # define NELEM(x) ((int) (sizeof(x) / sizeof((x)[0])))
@@ -52,8 +54,8 @@ static JNINativeMethod method_table[] = {
 //        {"getCalibrationXY","()[I",(void*)native_getCalibrationXY},
 //        {"getCalibrationABCD","()[F",(void*)native_getCalibrationABCD},
 //
-        {"FFmpeg_Init","()Ljava/lang/String;",(void*)native_FFmpeg_Init},
-        {"stringFromJNI","()I",(void*)native_stringFromJNI},
+        {"FFmpeg_Init","()I",(void*)native_FFmpeg_Init},
+        {"stringFromJNI","()Ljava/lang/String;",(void*)native_stringFromJNI},
 
 
 };
