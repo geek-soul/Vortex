@@ -13,6 +13,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 
+import com.tencent.bugly.crashreport.CrashReport;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,13 +28,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        CrashReport.initCrashReport(getApplicationContext(), "d74580cc42", true);
+
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
         initData();// init picture to image view.
         // Example of a call to a native method
         mViewPager = (ViewPager) findViewById(R.id.id_viewpager);
-
+        //CrashReport.testJavaCrash();
         mViewPager.setAdapter(new PagerAdapter()
         {
             @Override
