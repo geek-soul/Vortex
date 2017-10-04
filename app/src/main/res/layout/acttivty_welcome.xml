@@ -12,13 +12,22 @@
         android:layout_height="match_parent"
         android:layout_centerVertical="true"
         android:scaleType="centerCrop"
-        android:visibility="gone"
         android:src="@mipmap/welcome" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="gone">
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/show"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_above="@+id/id_helloWord"
+            android:text="开始直播"
+
+            />
 
         <TextView
             android:id="@+id/id_helloWord"
