@@ -1,0 +1,1 @@
+BUG LOG: Float calculation in x264_slice_write would malfunction, due to the absence of emms in some certain modules.
