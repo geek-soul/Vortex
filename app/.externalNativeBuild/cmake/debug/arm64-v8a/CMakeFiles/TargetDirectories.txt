@@ -1,3 +1,0 @@
-/Users/wangmingyong/AndroidStudioProjects/Vortex/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/edit_cache.dir
-/Users/wangmingyong/AndroidStudioProjects/Vortex/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/rebuild_cache.dir
-/Users/wangmingyong/AndroidStudioProjects/Vortex/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/native-lib.dir
